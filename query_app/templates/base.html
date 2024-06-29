@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>DATA QUERYING CHATBOT</title>
+</head>
+<body>
+  <div class="main">
+    <div class="navbar">
+      <p>
+        <span class="js">DataQuery</span> :
+        <span class="typed-text"></span>
+        <span class="cursor">|</span>
+    </p>
+    </div>
+
+
+
+{% block chatbot %}
+  
+{% endblock  %}
+  
+
+
+
+
+
+<footer class="footer" >
+	
+
+	<ul class="menu">
+		<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+		<li class="menu__item"><a class="menu__link" href="#">About us</a></li>
+		<li class="menu__item"><a class="menu__link" href="#">Contact us</a></li>
+
+
+	</ul>
+	<p style="opacity: 1.75;">Where Data Meet Clarity</p>
+
+</footer>
+
+
+
+  </div>
+
+<script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>

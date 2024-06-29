@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block chatbot %}
+<div class="content">
+  <div class="tagline">
+    <h2>Turning Data <img src="data-analysis-svgrepo-com.svg" alt=""> Queries into Answers:</h2>
+    <h1>Your Path to Insight!</h1>
+
+  </div>
+
+  <div class="cardholder">
+    <div class="card">
+      <p class="lines">Upload your file and receive instant insights from our chatbot. Our AI quickly analyzes your
+        data, uncovering key trends and metrics. Simplify your decision-making process with actionable information at
+        your fingertips.</p>
+    </div>
+    <div class="card">
+      <p class="lines">Transform your data with ease—upload files to our chatbot for rapid analysis. Whether it’s sales
+        figures, survey results, or financial data, our AI provides clear insights to guide your next steps.</p>
+    </div>
+    <div class="card">
+      <p class="lines">Streamline your data analysis: upload files to our chatbot and gain valuable insights in seconds.
+        From identifying patterns to highlighting outliers, our tool simplifies complex data for smarter decisions.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="sab">
+
+  <div class="left-div">
+    <div class="drag-area">
+      <div class="input-div">
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          
+          
+      
+        <input class="input" id="id_pdf" name="pdf" type="file" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" stroke-linejoin="round" stroke-linecap="round"
+          viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" class="icon">
+          <polyline points="16 16 12 12 8 16"></polyline>
+          <line y2="21" x2="12" y1="12" x1="12"></line>
+          <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+          <polyline points="16 16 12 12 8 16"></polyline>
+        </svg>
+      </div>
+      
+      <header>Drag & Drop to upload file</header>
+      
+    </div>
+  </div>
+  <div class="bot-footer">
+    <div id="command">
+      <input placeholder="Input command here" id="id_question" name="question" type="text"/>
+      <button class="shadow nice-font" type="submit" ><img src="send_40dp_FILL0_wght400_GRAD0_opsz40 (2).svg" alt="">Done!</button>
+    </div>
+  </div>
+</form>
+  <div class="right-div">
+    <div class="drag-area">
+      
+      <p style="    margin-top: -210px;
+      margin-right: 200px;
+  ">Here is your Answer </p>
+      {% if answer %}
+     
+  
+      <header style=" margin-right: 255px;">Answer:{{ answer }}</header>
+      {% endif %}
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

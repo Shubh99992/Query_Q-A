@@ -1,0 +1,379 @@
+.main,body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4EEE8;
+ 
+}
+
+.navbar {
+  margin-top: 10px;
+  width: 100%;
+  height: 75px;
+  background-color: #F5CEBE;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+
+.content {
+  margin-top: 80px;
+  padding: 20px;
+  width: 1300px;
+  /* background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.tagline {
+height: 20%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.tagline h2 {
+  font-size: 7vh;
+  font-family: outfit ;
+ font-optical-sizing: auto;
+ font-weight: 600;
+ font-style: normal;
+}
+.tagline h2 img {
+  margin-bottom: -12px;
+  height: 70px;
+}
+.tagline h1 {
+  font-size: 16vh;
+  font-family: "Andika", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+ letter-spacing: -4px;
+ margin-top: -20px;
+ margin-bottom: 8vh;
+}
+.lines {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  
+}
+
+
+
+.cardholder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 230px;
+}
+
+.card {
+  margin-top: 30vh;
+  position: relative;
+  width: 350px;
+  height: 320px;
+  background: #6B8A7A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+
+
+
+
+.footer {
+  position: relative;
+  background: #F5CEBE;
+  min-height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:5%;
+  width: 1420px;
+  border-radius: 20px 20px 0 0;
+}
+
+ 
+  .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+} 
+
+.menu__item {
+  list-style: none;
+  
+} 
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #114E60;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 2.75;
+  font-weight: 300;
+}
+
+
+.footer p {
+  color: #114E60;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+
+
+.sab{
+
+height: 550px;
+width: 100%;
+margin-top: 200px;
+background-color: #F5CEBE;
+
+/* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* #h {
+  color: #;
+  border-radius: 5px;
+} */
+
+/* .shadow {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+} */
+
+.nice-font {
+border: none;
+border-radius: 50px;
+height: 60px;
+width: 80px;
+background-color: #F5CEBE;
+}
+.nice-font:hover{
+transition: 1s;
+background-color: white;
+
+
+}
+.bot-header {
+  text-align: center;
+}
+
+.bot-footer {
+margin-top: 420px;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+#command {
+  width: 100%;
+  padding: 7px 7px;
+  border-radius: 30px;
+  border: 2px solid #114E60;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+#command input {
+  width: 73%;
+  padding: 10px 15px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+
+.row {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.chat {
+  border: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #111;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.question {
+  float: right;
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+.answer {
+  float: left;
+
+}
+
+
+
+.left-div {
+height: 300px;
+width: 500px;
+background-color: #fff;
+position: absolute;
+top: 100px;
+left: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.right-div {
+  height: 300px;
+  width: 850px;
+  background-color: #fff;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+
+.drag-area {
+border: 2px dashed var(--light-col) !important;
+height:300px !important;
+width: 500px;
+border-radius: 5px;
+display: flex !important;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: absolute !important;
+/* top: 1%;
+left: 1%; */
+/* box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+  0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+  0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1) !important; */
+}
+
+.drag-area.active {
+border: 2px solid var(--light-col) !important;
+}
+
+.drag-area header {
+font-size: 1.5rem;
+font-weight: 500;
+color: #114E60 !important;
+}
+.drag-area span {
+font-size: 25px;
+font-weight: 500;
+color: #114E60 !important;
+margin: 10px 0 15px 0;
+}
+.drag-area button {
+padding: 10px 25px;
+font-size: 20px;
+font-weight: 500;
+border: none;
+outline: none;
+/* background: #55AD9B !important; */
+/* color: #55AD9B !important; */
+border-radius: 5px;
+background-color: #114E60;
+cursor: pointer;
+}
+.drag-area embed .drag-area embed {
+height: 100% !important;
+width: 100% !important;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.input-div {
+position: relative;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 2px solid #114E60;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+box-shadow: 0px 0px 100px #55AD9B,
+  inset 0px 0px 10px #55AD9B, 0px 0px 5px rgb(255, 255, 255) !important;
+animation: flicker 2s linear infinite;
+}
+
+.icon {
+color: #55AD9B;
+font-size: 2rem;
+cursor: pointer;
+animation: iconflicker 2s linear infinite;
+}
+
+.input {
+position: absolute;
+opacity: 0;
+width: 100%;
+height: 100%;
+cursor: pointer !important;
+}
+
+
+
+
+
+
+
+p{
+font-size: 30px;
+font-weight: 400;
+color: black;
+font-family: outfit;
+}
+
+.js{
+font-weight: 600;
+}
